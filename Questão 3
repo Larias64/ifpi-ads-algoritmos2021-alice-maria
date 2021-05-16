@@ -1,0 +1,11 @@
+//Ler um valor minutos, calcular o equivalente em horas e minutos
+const prompt = require('prompt-sync')();
+
+console.log('Digite o tempo em minutos:')
+const minuto = Number(prompt('Minuto(s): '))
+
+const hora = minuto/60          // ou const hora = Math.trunc(minuto/60) 
+const horaSemMinutos = Math.trunc(hora)
+const minutos = minuto%60
+
+console.log('O tempo foi convertido de minutos para ',horaSemMinutos,' hora(s) e ', minutos,' minuto(s).')
