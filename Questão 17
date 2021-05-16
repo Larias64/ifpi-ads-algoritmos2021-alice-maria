@@ -1,0 +1,16 @@
+//Leia o valor da base e altura de um retângulo, calcule e escreva sua área. área = base * altura:
+const prompt = require('prompt-sync')();
+
+
+console.log('Escreva os valores da altura e da base de um retângulo:')
+
+const altura = Number(prompt('Altura do retângulo: '))
+
+const base = Number(prompt('Base do retângulo: '))
+
+
+//Cálculo da área
+
+const area = altura * base
+
+console.log('A área do retângulo é igual a: ',area,'.')
