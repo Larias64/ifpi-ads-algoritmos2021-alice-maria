@@ -1,0 +1,9 @@
+//Dollar = 5,27 reais
+const prompt = require('prompt-sync')();
+
+console.log('Digite o valor em dólar:')
+const dolar = Number(prompt('Dolar: '))
+
+const real = dolar * 5.27
+
+console.log('O preço em real é R$',real,'.')
