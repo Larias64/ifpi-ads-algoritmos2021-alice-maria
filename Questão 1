@@ -1,0 +1,22 @@
+// 1 caso - trnsformar m/s em km/h:
+
+const input = require('prompt-sync')();
+
+//Digitar velocidade
+const velocidade_ms = input('Velocidade(m/s) ')
+
+//Calculo
+const velocidade_km = velocidade_ms * 3.6
+
+//Resultado
+console.log('A velocidade ',velocidade_ms, 'em m/s, é ',velocidade_km, 'em km/h')
+
+
+
+
+
+
+
+
+
+
