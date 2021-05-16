@@ -1,0 +1,10 @@
+//Leia um valor em real (R$), calcule e escreva 70% deste valor:
+const prompt = require('prompt-sync')();
+
+var valor = Number(prompt('Valor em real: '))
+
+
+const setentaPorcento = valor * 0.7
+
+
+console.log('70% do valor é igual a: R$',setentaPorcento,'.')
