@@ -1,0 +1,12 @@
+//Leia 2 números, calcule e escreva a divisão da soma pela subtração dos números lidos:
+const prompt = require('prompt-sync')();
+
+console.log('Digite dois números inteiros:')
+const numero_1 = Number(prompt('Numero 1: '))
+const numero_2 = Number(prompt('Numero 2: '))
+
+const soma = numero_1 + numero_2
+const diferença = numero_1 - numero_2
+const divisao = soma/diferença
+
+console.log('A divisão da soma pela subtração dos 2 números é:',divisao,'.')
