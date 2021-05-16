@@ -1,0 +1,12 @@
+//Leia 3 números, calcule e escreva a soma dos 2 primeiros e a diferença entre os 2 últimos:
+const prompt = require('prompt-sync')();
+
+console.log('Digite três números inteiros:')
+const numero_1 = Number(prompt('Numero 1: '))
+const numero_2 = Number(prompt('Numero 2: '))
+const numero_3 = Number(prompt('Numero 3: '))
+
+const soma = numero_1 + numero_2
+const diferença = numero_2 - numero_3
+
+console.log('Soma dos 2 primeiros dígitos é:',soma,'.Diferença dos últimos dígitos é:', diferença)
