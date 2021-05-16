@@ -1,0 +1,11 @@
+//Leia 2 números inteiros, calcule e escreva o quociente e o resto da divisão do 1o pelo 2o:
+const prompt = require('prompt-sync')();
+
+console.log('Digite dois números inteiros:')
+const numero_1 = Number(prompt('Numero 1: '))
+const numero_2 = Number(prompt('Numero 2: '))
+
+const quociente = numero_1/numero_2
+const resto = numero_1%numero_2
+
+console.log('O quociente é: ',quociente,'e o resto é: ',resto,'.')
