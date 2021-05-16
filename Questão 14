@@ -1,0 +1,24 @@
+//Leia 3 notas de um aluno e o peso de cada nota, calcule e escreva a média ponderada:
+const prompt = require('prompt-sync')();
+
+console.log('Escreva 3 notas que um aluno tirou:')
+
+var nota_1 = Number(prompt('Nota 1: '))
+
+var nota_2 = Number(prompt('Nota 2: '))
+
+var nota_3 = Number(prompt('Nota 3: '))
+
+
+
+var peso_1 = nota_1 * 1
+
+var peso_2 = nota_2 * 2
+
+var peso_3 = nota_3 * 3
+
+var mediaPonderada = (peso_1 + peso_2 + peso_3)/(1 + 2 + 3)
+
+
+
+console.log('A média ponderada das notas é igual a: ',mediaPonderada,'.')
