@@ -1,0 +1,16 @@
+//Leia o valor do raio de uma circunferência, calcule e escreva seu comprimento. c = 2 * pi * r:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite o valor do raio da circinferência:')
+
+const raio = Number(prompt('Raio da circunferência: '))
+
+
+//Cálculo do comprimento
+
+//Arredondei pi para 3,14
+
+const comprimento = 2 * 3.14 * raio
+
+console.log('O comprimento da circunferência é igual a: ',comprimento,'.')
