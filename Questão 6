@@ -1,0 +1,9 @@
+//Transformar km/h em m/s:
+const prompt = require('prompt-sync')();
+
+console.log('Digite uma velocidade em km/s: ')
+const velocidade_km = Number(prompt('Velocidade: '))
+
+const velocidade_ms = velocidade_km/3.6
+
+console.log('Velocidade em km/h agora é: ',velocidade_ms,'m/s')
