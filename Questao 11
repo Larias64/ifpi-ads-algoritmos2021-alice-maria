@@ -1,0 +1,20 @@
+//Leia um número inteiro (3 dígitos) e escreva o inverso do número:
+const prompt = require('prompt-sync')();
+
+console.log('Digite um número inteiro de 3 dígitos:')
+const numero = Number(prompt('Numero: '))
+
+
+const divisao = numero/100
+
+const centena = Math.trunc(numero/100)
+
+const dezena_1 = divisao - Math.trunc(numero/100) 
+
+const dezena = Math.trunc(dezena_1*10)
+
+const unidade = numero - ((centena*100) + (dezena*10))  
+
+
+
+console.log('O número inverso é igual a: ',unidade,dezena,centena,'.')
