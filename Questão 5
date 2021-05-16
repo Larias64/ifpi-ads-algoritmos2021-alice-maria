@@ -1,0 +1,14 @@
+//Digite um numero inteiro e três digitos e calcule a soma de seus elementos:
+const prompt = require('prompt-sync')();
+
+console.log('Digite um número inteiro de três dígitos:')
+const numero = Number(prompt('Numero inteiro de 3 digitos: '))
+
+const divisao = numero/100
+const centena = Math.trunc(numero/100)
+const dezena_1 = divisao - Math.trunc(numero/100) 
+const dezena = Math.trunc(dezena_1*10)
+const unidade = numero - ((centena*100) + (dezena*10))  
+const soma = centena + dezena + unidade
+
+console.log('Soma dos 3 dígitos é igual a: ',soma)
