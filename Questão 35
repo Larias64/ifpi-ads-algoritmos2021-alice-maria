@@ -1,0 +1,24 @@
+//Leia um número inteiro (4 dígitos), calcule e escreva a soma dos elementos que o compõem :
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite um número de 4 dígitos:')
+
+var num = Number(prompt('Número: '))
+
+
+//Separar cada algarismo do número
+
+var mil = Math.trunc(num/1000)
+
+var cen = Math.trunc((num%1000)/100)  
+
+var dez = Math.trunc(((num%1000)/10) - (cen*10))
+
+var un = num%1000 - ((cen*100) + (dez*10))
+
+//somar os algarismos
+
+var soma = mil + cen + dez + un
+
+console.log('A soma dos dígitos do numero inteiro de 4 dígitos',num,'é igual a:',soma,'.')
