@@ -1,0 +1,14 @@
+//Leia um valor em km, calcule e escreva o equivalente em m:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite um valor em kilômetro:')
+
+const km = Number(prompt('Valor em km: '))
+
+
+//km para m:
+
+const m = km * 1000
+
+console.log('O valor em km é igual a:',m,'em metros.')
