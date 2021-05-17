@@ -1,0 +1,26 @@
+//Leia um número inteiro de segundos, calcule e escreva quantas horas, quantos minutos e quantos segundos ele corresponde:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite um número em segundos:')
+
+var seg = Number(prompt('Segundos: '))
+
+
+//Segundos para minutos:
+
+var min = Math.trunc(seg/60)
+
+//valor dos segundos:
+
+var segundos = seg%60
+
+//minutos para horas: 
+
+var hora = Math.trunc(min/60)
+
+//valor dos minutos
+
+var minutos = min%60
+
+console.log('Os segundos foram convertidos para',hora,'hora(s)',minutos,'minuto(s) e',segundos,'segundo(s).')
