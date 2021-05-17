@@ -1,0 +1,25 @@
+//Leia um número inteiro de horas, calcule e escreva quantas semanas, quantos dias e quantas horas ele corresponde:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite um número em horas:')
+
+const hora = Number(prompt('Horas: '))
+
+//Horas para dias
+
+var dia = Math.trunc(hora/24)
+
+//Horas restantes
+
+var horas = hora%24
+
+//Dias para semanas
+
+var semanas = Math.trunc(dia/7)
+
+//Dias restantes
+
+var dias = dia%7
+
+console.log('Os dia foram convertidos para',semanas,'semana(s)',dias,'dia(s) e',horas,'hora(s).')
