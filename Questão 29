@@ -1,0 +1,17 @@
+//Leia um número inteiro de meses, calcule e escreva quantos anos e quantos meses ele corresponde:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite um número em meses:')
+
+const mes = Number(prompt('Meses: '))
+
+//mês para anos
+
+var anos = Math.trunc(mes/12)
+
+//Quantidade de meses que sobram
+
+var meses = mes%12
+
+console.log('Os meses foram convertidos para',anos,'ano(s) e',meses,'mese(s).')
