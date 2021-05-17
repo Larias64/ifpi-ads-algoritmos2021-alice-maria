@@ -1,0 +1,14 @@
+//Leia um valor em kg, calcule e escreva o equivalente em g:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite um valor em kilograma:')
+
+const kg = Number(prompt('Valor em kg: '))
+
+
+//kg para g:
+
+const g = kg * 1000
+
+console.log('O valor em kg é igual a:',g,'em gramas.')
