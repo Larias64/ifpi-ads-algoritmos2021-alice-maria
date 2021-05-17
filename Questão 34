@@ -1,0 +1,22 @@
+//Leia 3 números, calcule e escreva a média dos números:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite um número de 3 dígitos:')
+
+var num = Number(prompt('Número: '))
+
+
+//Separar cada algarismo do número
+
+var cen = Math.trunc(num/100)
+
+var dez = Math.trunc((num%100)/10)  
+
+var un = num%100 - (dez*10)
+
+//Média dos algarismos
+
+var media = (cen + dez + un)/3
+
+console.log('A media dos dígitos do numero inteiro de 3 dígitos',num,'é igual a:',media,'.')
