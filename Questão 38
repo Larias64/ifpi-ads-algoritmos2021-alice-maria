@@ -1,0 +1,19 @@
+//Leia 2 (duas) frações (numerador e denominador), calcule e escreva a soma destas frações, escrevendo o resultado em forma de fração:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite duas frações(dois numeradores e dois denominadores):')
+
+
+var num_1 = Number(prompt('Numerador 1: '))
+var den_1 = Number(prompt('Denominador 1: '))
+var num_2 = Number(prompt('Numerador 2: '))
+var den_2 = Number(prompt('Denominador 2: '))
+
+//fração 1 = num_1 / den_1
+//fração 2 = num_2 / den_2
+ 
+var soma_fracao_num = (num_1*den_2) + (num_2*den_1)
+var soma_fracao_den = den_1 * den_2
+
+console.log('Soma da frações é:',soma_fracao_num,'/',soma_fracao_den,'.')
