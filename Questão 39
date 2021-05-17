@@ -1,0 +1,20 @@
+//Leia três números inteiros e positivos (A, B, C) e calcule a seguinte expressão D = (R+S)/2, onde R = (A+B)^2 e S=(B+C)^2:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite oos valores correspondentes para A, B, C):')
+
+var a = Number(prompt('Valor A: '))
+var b = Number(prompt('Valor B: '))
+var c = Number(prompt('Valor C: '))
+
+ //Aplicando a formula para saber R e S
+
+var r = ((a + b)*(a + b))
+var s = ((b + c)*(b + c))
+
+//Aplicando a expressao D
+
+var d = (r + s)/2
+
+console.log('Valor de D é:',d)
