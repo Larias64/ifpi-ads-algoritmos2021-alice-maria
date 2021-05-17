@@ -1,0 +1,21 @@
+//Leia um número inteiro (3 dígitos), calcule e escreva a diferença entre o número e seu inverso:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite 3 dígitos de um número:')
+
+var num_1 = Number(prompt('Dígito 1: '))
+var num_2 = Number(prompt('Dígito 2: '))
+var num_3 = Number(prompt('Dígito 3: '))
+
+
+//calcular o valor do numero e do inverso para calcular a diferença entre eles
+
+var numero = (num_1*100) + (num_2*10) + num_3
+
+var inverso = (num_3*100) + (num_2*10) +num_1
+
+var diferença = numero - inverso
+  
+
+console.log('Os dígitos',numero,'foram invertidos para:',inverso,'. E a diferença entre o número e seu inverso é',diferença,'.')
