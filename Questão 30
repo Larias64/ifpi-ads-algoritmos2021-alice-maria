@@ -1,0 +1,33 @@
+//Leia um número inteiro de minutos, calcule e escreva quantos dias, quantas horas e quantos minutos ele corresponde:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite um número em minutos:')
+
+const min = Number(prompt('Minutos: '))
+
+//minuto para hora
+
+var hora = Math.trunc(min/60)
+
+//Minutos restantes
+
+var minuto = min%60
+
+//Hora para dias
+
+var dia = Math.trunc(hora/24)
+
+//Horas restantes
+
+var horas = hora%24
+
+//Dias para semanas
+
+var semana = Math.trunc(dia/7) 
+
+//dias restantes
+
+var dias = dia%7
+
+console.log('Os minutos foram convertidos para',semana,'semana(s),',dias,'dia(s),',horas,'hora(s) e',minuto,'minuto(s).')
