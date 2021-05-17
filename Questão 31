@@ -1,0 +1,11 @@
+//Leia um número inteiro (4 dígitos binários), calcule e escreva o equivalente na base decimal.:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite um número binário com 4 dígitos:')
+
+var binario = Number(prompt('Número de 4 dígitos: '))
+
+var decimal = parseInt(binario, 2);
+
+console.log('O valor binário:',binario,'foi convertido para',decimal,'na base decimal.')
