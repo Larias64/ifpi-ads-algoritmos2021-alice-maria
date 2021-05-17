@@ -1,0 +1,18 @@
+//Leia a idade de uma pessoa expressa em dias e escreva-a expressa em anos, meses e dias.:
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite uma idade em dias:')
+
+var dia = Number(prompt('Dias: '))
+
+//Converter dias em anos (considerei 1 mês = 30 dias)
+
+var dia_ano = Math.trunc(dia/365)
+
+var dia_mes = Math.trunc((dia%365)/30)
+
+var dia_restante = (dia%365)%30
+
+
+console.log('A idade em dias foi convertida para:',dia_ano,'ano(s)', dia_mes,',mes(es) ,', dia_restante,'dia(s).')
