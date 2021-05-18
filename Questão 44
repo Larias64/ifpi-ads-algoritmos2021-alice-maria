@@ -1,0 +1,22 @@
+/*Sabendo que latão é constituído de 70% de cobre e 30% de zinco, escreva um algoritmo que calcule a
+quantidade de cada um desses componentes para se obter certa quantidade de latão (em kg), informada
+pelo usuário*/
+
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite a quantidade de latão(kg):')
+
+const la = Number(prompt('Quantidade de latão: '))
+
+
+//Calculando quantidade de cobre
+
+var cobre = la * 0.7
+
+//Calculando quantidade de zinco
+
+var zinco = la * 0.3
+
+
+console.log('É necessário',cobre,'kg de cobre e',zinco,'kg de zinco para produzir',la,'kg de latão.')
