@@ -1,0 +1,27 @@
+/*Um sistema de equações lineares do tipo ax + by = c , pode ser resolvido segundo mostrado abaixo x = (ce - bf) / (ae - bd)
+                                          dx + ey = f                                              y = (af - cd) / (ae - bd) 
+Escreva um algoritmo que leia os coeficientes a, b, c, d, e e f, calcule e escreva os valores de x e y.*/
+
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite o valor dos coeficienes:')
+
+const a = Number(prompt('Valor de a: '))
+const b = Number(prompt('Valor de b: '))
+const c = Number(prompt('Valor de c: '))
+const d = Number(prompt('Valor de d: '))
+const e = Number(prompt('Valor de e: '))
+const f = Number(prompt('Valor de f: '))
+
+//Calculando x = (ce - bf) / (ae - bd)
+
+var x = ((c * e) - (b * f)) / ((a * e) - (b * d))
+
+//Calculando  y = (af - cd) / (ae - bd) 
+
+var y = ((a * f) - (c * d)) / ((a * e) - (b * d))
+
+
+
+console.log('Ovalor de x é de:',x,',e o de y é de',y)
