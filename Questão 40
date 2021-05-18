@@ -1,0 +1,27 @@
+//Calcule a quantidade de dinheiro gasta por um fumante. Dados de entrada: o número de anos que ele fuma, o no de cigarros fumados por dia e o preço de uma carteira (1 carteira tem 20 cigarros):
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite a seguir os dados de um fumante, o número de anos que ele fuma, o número de cigarros que ele fuma por dia e o preço de uma carteira:')
+
+const ano = Number(prompt('Número de anos que ele fuma: '))
+const quantidade = Number(prompt('Número de cigarros que ele fuma por dia: '))
+const valor = Number(prompt('Valor de uma carteira de cigarros: '))
+
+//Calculando um cigarro vale
+
+var umCigarro = valor/20
+
+//Calculando quanto ele gasta por dia
+
+var gastoPorDia = umCigarro * quantidade
+
+//Calculando quanto ele gasta por ano (1 ano = 365 dias)
+
+var umAno = gastoPorDia * 365
+
+//Gasto total dos anos que ele fumou
+
+var  total = Math.round(ano * umAno)
+
+console.log('O gasto de um fumante no período de:',ano,'ano(s), foi de aproximadamente:',total,'reais.')
