@@ -1,0 +1,26 @@
+/*O custo ao consumidor de um carro novo é a soma do custo de fábrica com a percentagem do
+distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que a percentagem do distribuidor
+seja de 28% e os impostos de 45%, escreva um algoritmo que leia o custo de fábrica de um carro e
+escreva o custo ao consumidor.*/
+
+const prompt = require('prompt-sync')();
+
+
+console.log('Digite a seguir o custo de fábrica de um carro:')
+
+const fabrica = Number(prompt('Custo de fábrica: '))
+
+//Calculando porcentagem do distribuidor
+
+var distribuidor = fabrica * 0.28
+
+//Calculando porcetagem dos impostos
+
+var impostos = fabrica * 0.45
+
+//Calculando o custo ao consumidor
+
+var carro = fabrica + distribuidor + impostos
+
+
+console.log('O custo do carro para o consumidor é de:',carro)
