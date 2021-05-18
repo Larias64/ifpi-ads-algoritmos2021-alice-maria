@@ -9,15 +9,16 @@ var nota_2 = Number(prompt('Nota 2: '))
 
 var nota_3 = Number(prompt('Nota 3: '))
 
+console.log('Escreva 3 pesos para as notas respectivamente:')
+
+var peso_1 = Number(prompt('Peso 1: '))
+
+var peso_2 = Number(prompt('Peso 2: '))
+
+var peso_3 = Number(prompt('Peso 3: '))
 
 
-var peso_1 = nota_1 * 1
-
-var peso_2 = nota_2 * 2
-
-var peso_3 = nota_3 * 3
-
-var mediaPonderada = (peso_1 + peso_2 + peso_3)/(1 + 2 + 3)
+var mediaPonderada = (nota_1*peso_1) + (nota_2*peso_2) + (nota_3*peso_3) / (peso_1 + peso_2 + peso_3)
 
 
 
