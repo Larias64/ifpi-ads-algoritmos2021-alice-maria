@@ -1,0 +1,26 @@
+/*Leia 2 (dois) números, verifique e escreva o menor e o maior entre os números lidos:*/
+
+const prompt = require('prompt-sync')();
+
+function main(){
+
+    const numero1 = Number(prompt('Número 1: '))
+    const numero2 = Number(prompt('Número 2: '))
+
+    if(numero1 > numero2){
+
+        console.log(numero1,'é o maior número')
+
+    }else if(numero1 < numero2){
+    
+        console.log(numero2,'é o maior numero')
+
+    }else{
+
+        console.log('Os números são iguais')
+
+    }
+   
+}
+
+main()
