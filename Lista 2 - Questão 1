@@ -1,0 +1,26 @@
+/*Leia 3 (três) números, verifique e escreva quantos números iguais existem entre os números:*/
+
+const prompt = require('prompt-sync')();
+
+function main(){
+
+    const numero1 = Number(prompt('Número 1: '))
+    const numero2 = Number(prompt('Número 2: '))
+    const numero3 = Number(prompt('Número 3: '))
+
+    if(numero1 === numero2 && numero2 === numero3){
+
+        console.log('Os 3 números são iguais.')
+
+    }else if(numero1 != numero2 && numero2 != numero3 && numero1 != numero3){
+    
+        console.log('Nenhum número é igual')
+
+    }else{
+
+        console.log('Dois números são iguais')
+    }
+   
+}
+
+main()
