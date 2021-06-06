@@ -1,0 +1,45 @@
+/*Leia 5 (cinco) números inteiros e escreva o maior e o menor deles. Considere que todos os valores são
+diferentes:*/
+
+const prompt = require('prompt-sync')();
+
+function main(){
+
+    const numero1 = Number(prompt('Número 1: '))
+    const numero2 = Number(prompt('Número 2: '))
+    const numero3 = Number(prompt('Número 3: '))
+    const numero4 = Number(prompt('Número 4: '))
+    const numero5 = Number(prompt('Número 5: '))
+
+    let maior = numero1
+    let menor = numero1
+
+    if (numero2 > maior){
+        maior = numero2
+    }else if (numero2 < menor){
+        menor = numero2
+    }
+
+    if (numero3 > maior){
+        maior = numero3
+    }else if(numero3 < menor){
+        menor = numero3
+    }
+   
+    if (numero4 > maior){
+        maior = numero4
+    }else if (numero4 < menor){
+        menor = numero4
+    }
+
+    if (numero5 > maior){
+        maior = numero5
+    }else if (numero5 < menor){
+        menor = numero5
+    }
+
+    console.log('Maior valor =',maior,'.Menor valor =',menor)
+    
+}
+
+main()
